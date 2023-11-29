@@ -1,0 +1,29 @@
+
+<div class="col-sm-12 " style = " background-color: #7ad69d; font-style: Helvetica; font-size: large; text-align: right;height: 80%;">Cursos en linea</div>
+<div class="col-sm-8">
+<table class="table">
+  <thead>
+    <tr style="text-align: center;">
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Plataforma</th>
+      <th scope="col">Lanzamiento</th>
+      <th scope="col">Duración(h)</th>
+    </tr>
+  </thead>
+  <tbody style="background-color: rgb(78, 76, 76); text-align: center;">
+    <tr *ngFor="let curso of cursos">
+      <td>{{curso.id}}</td>
+      <td>
+        <dd>
+          <a href="{{curso.image}}">{{curso.title}}</a>
+        </dd>
+      </td>
+      <td>{{curso.platform}}</td>
+      <td>{{curso.launch_year}}</td>
+      <td>{{curso.duration_hours}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
